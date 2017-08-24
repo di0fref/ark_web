@@ -23,7 +23,7 @@
 define('DB_NAME', 's6411a_arksystems');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 's6411a');
 
 /** MySQL database password */
 define('DB_PASSWORD', '7Ywy-pBHnbge');
