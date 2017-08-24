@@ -121,7 +121,7 @@ a:link, a:visited {
 }
 
 .subfooter {
-	background-color: #e5e5e5;
+	background-color: #ececec;
 	border-top: 1px solid #ddd;
 }
 
@@ -213,4 +213,17 @@ a:link, a:visited {
 
 #employees > ul > li a {
 	display: block;
+}
+
+#sidebar h2{
+	font-size: 18px;
+	font-weight: 700;
+	padding-bottom: 8px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #1b86d7;
+}
+
+.widget .widget-title{
+	color: #666;
+	text-transform: none;
 }
