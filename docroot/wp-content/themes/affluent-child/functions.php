@@ -29,6 +29,15 @@ add_theme_support('post-thumbnails');
 //    return 'slider,tagline,features,testimonials,content';
 //}
 
+//Print footer copyright line
+if(!function_exists('cpotheme_footer_custom')){
+    function cpotheme_footer_custom(){
+        echo '<div class="footer-content">';
+        echo '&copy; '.esc_attr(get_bloginfo('name')).' '.date("Y");
+        echo '</div>';
+    }
+}
+
 
 // Register and load the widget
 function ark_load_widget()
