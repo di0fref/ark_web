@@ -30,12 +30,11 @@ add_theme_support('post-thumbnails');
 //}
 
 //Print footer copyright line
-if(!function_exists('cpotheme_footer_custom')){
-    function cpotheme_footer_custom(){
-        echo '<div class="footer-content">';
-        echo '&copy; '.esc_attr(get_bloginfo('name')).' '.date("Y");
-        echo '</div>';
-    }
+function cpotheme_footer_custom()
+{
+    echo '<div class="footer-content">';
+    echo '&copy; ' . esc_attr(get_bloginfo('name')) . ' ' . date("Y");
+    echo '</div>';
 }
 
 
