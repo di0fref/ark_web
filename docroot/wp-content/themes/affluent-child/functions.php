@@ -96,7 +96,7 @@ class wpb_widget extends WP_Widget
 
     public function widget($args, $instance)
     {
-        $user_id = 2244;
+        $user_id = 2223;
         $user = get_post($user_id);
         $user_fields = (object)get_fields($user_id);
         $thumb = get_the_post_thumbnail($user_id, "sidebar", array("class" => "circular-small"));
