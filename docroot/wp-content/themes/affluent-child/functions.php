@@ -96,7 +96,7 @@ class wpb_widget extends WP_Widget
 
     public function widget($args, $instance)
     {
-        $user_id = 2244;
+        $user_id = 2223;
         $user = get_post($user_id);
         $user_fields = (object)get_fields($user_id);
         $thumb = get_the_post_thumbnail($user_id, "sidebar", array("class" => "circular-small"));
@@ -126,7 +126,7 @@ class wpb_widget extends WP_Widget
             <p>Sugar provides an easy-to-use CRM interface focused on features that matter and nothing more.</p>
 
             <p>
-                <a class="ctsc-button ctsc-button-normal ctsc-button-left ctsc-button-has-icon" href="https://www.sugarcrm.com" style=" background:#F78529; color:#FFFFFF;">
+                <a class="ctsc-button ctsc-button-normal ctsc-button-left ctsc-button-has-icon" href="https://www.sugarcrm.com" style=" background:#e7e7e7; color:#666666;">
                     <span class="ctsc-button-content">
                         <span class="ctsc-button-icon icon-info-circle"></span>
                         <span class="ctsc-button-text">Read more about SugarCRM</span>

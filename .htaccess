@@ -1,0 +1,3 @@
+
+RewriteEngine on
+RewriteRule ^(.*)$ /docroot/$1 [L]

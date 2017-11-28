@@ -9,7 +9,9 @@ Text Domain:affluent-child
 }
 
 .primary-color {
-	color: #dd973a;
+	/*color: #dd973a;*/
+	color: #0e8716;
+
 
 }
 
@@ -50,6 +52,11 @@ h1 {
 	font-weight: normal;
 }
 
+.menu-main{
+	    padding-top: 15px;
+    float: right;
+}
+
 @media only screen and (min-width: 1080px) {
 	body.sidebar-right #main {
 		background: transparent url(images/bg-cols2.png) repeat-y 52% 0;
@@ -84,10 +91,24 @@ h1 {
 }
 
 .header {
-	padding: 34px 0;
+	padding: 10px 0;
 	border-bottom: 1px solid #ddd;
 
 }
+
+/*.header:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 0px;
+	background: #F78529;
+	background-color: #0e8716;
+	background-image: -webkit-linear-gradient(#2d5599, #1b86d7);
+	background-image: linear-gradient(#2d5599, #1d86df);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
+}*/
 
 .header:after {
 	content: '';
@@ -95,21 +116,21 @@ h1 {
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	height: 6px;
+	height: 0px;
 	background: #F78529;
-	background-color: #fca259;
-	background-image: -webkit-linear-gradient(#2d5599, #1b86d7);
-	background-image: linear-gradient(#2d5599, #1d86df);
+	background-color: #0e8716;
+	background-image: -webkit-linear-gradient(#0e8716, #0e8716);
+	background-image: linear-gradient(#0e8716, #0e8716);
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
 }
 
 a:link, a:visited {
-	color: #F78529;
+	color: #0e8716;
 	text-decoration: none;
 }
 
 .menu-main .current_page_ancestor > a:hover, .menu-main .current-menu-item > a {
-	color: #F78529;
+	color: #0e8716;
 }
 
 .ctsc-pricing-content {
