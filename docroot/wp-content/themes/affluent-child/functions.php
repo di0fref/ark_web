@@ -126,13 +126,22 @@ class wpb_widget extends WP_Widget
             <p>Sugar provides an easy-to-use CRM interface focused on features that matter and nothing more.</p>
 
             <p>
-                <a class="ctsc-button ctsc-button-normal ctsc-button-left ctsc-button-has-icon" href="https://www.sugarcrm.com" style=" background:#e7e7e7; color:#666666;">
+                <a class="" href="https://www.sugarcrm.com">
                     <span class="ctsc-button-content">
-                        <span class="ctsc-button-icon icon-info-circle"></span>
-                        <span class="ctsc-button-text">Read more about SugarCRM</span>
+                        <span class="">Read more about SugarCRM</span>
+                    </span>
+                </a>
+  <br>
+                <a class="" href="http://arksystems.actonservice.com/acton/formfd/34390/0001:d-0002">
+                    <span class="ctsc-button-content">
+                        <span class="">Sugar eBook Change Maker</span>
                     </span>
                 </a>
             </p>
+
+<!--<p><a href="http://arksystems.actonservice.com/acton/attachment/34390/f-0001/0/-/-/-/-/SugarCRM_eBook_v05_Change_Maker.pdf">Sugar eBook Change Maker</a></p>-->
+
+
         </section>
         <?php
         echo $args['after_widget'];
@@ -163,7 +172,7 @@ class wpb_widget extends WP_Widget
 
 function employee_shortcode()
 {
-    $the_posts = get_posts(array('post_type' => 'cpo_team'));
+    $the_posts = get_posts(array('post_type' => 'cpo_team', "numberposts" => 50, "order" => ASC));
 
     $data = "<div id='employees'><ul>";
 

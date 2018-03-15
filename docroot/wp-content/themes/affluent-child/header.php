@@ -1,7 +1,11 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?>
 <head>
+
+
     <?php wp_head(); ?>
+<?php the_field('header_scripth'); ?>
+
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
 
